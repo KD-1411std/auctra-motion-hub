@@ -32,21 +32,21 @@ const IndustriesSection = () => {
       title: "Electronics",
       description: "Accurate positioning systems for PCB assembly, component placement, and testing equipment"
     },
-    {
-      icon: "🍭",
-      title: "Food & Beverage",
-      description: "Hygienic automation solutions for food processing, bottling, and packaging applications"
-    },
-    {
-      icon: "💊",
-      title: "Pharmaceutical",
-      description: "Precise automation for drug manufacturing, packaging, and laboratory automation systems"
-    },
-    {
-      icon: "🏗️",
-      title: "Construction",
-      description: "Robust motion control for construction equipment, material handling, and automated systems"
-    }
+    // {
+    //   icon: "🍭",
+    //   title: "Food & Beverage",
+    //   description: "Hygienic automation solutions for food processing, bottling, and packaging applications"
+    // },
+    // {
+    //   icon: "💊",
+    //   title: "Pharmaceutical",
+    //   description: "Precise automation for drug manufacturing, packaging, and laboratory automation systems"
+    // },
+    // {
+    //   icon: "🏗️",
+    //   title: "Construction",
+    //   description: "Robust motion control for construction equipment, material handling, and automated systems"
+    // }
   ];
 
   return (
