@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-primary">Auctra Motion Controls</h3>
+            <h3 className="text-3xl font-bold mb-4 text-primary">Auctra Motion Controls</h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Specializing in high-performance automation solutions with industrial connectors, 
               servo motors, and cables for modern automation systems.
@@ -27,7 +27,7 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="#home" className="text-gray-300 hover:text-primary transition-colors">Home</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
@@ -39,7 +39,7 @@ const Footer = () => {
           
           {/* Products */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Our Products</h4>
+            <h4 className="text-xl font-semibold mb-4">Our Products</h4>
             <ul className="space-y-2 text-gray-300">
               <li>Servo Motors</li>
               <li>Industrial Connectors</li>
