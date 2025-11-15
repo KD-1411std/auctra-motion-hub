@@ -23,7 +23,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
             Powering Automation with 
             <span className="block text-primary">Reliable Motion Control Solutions</span>
           </h1>
