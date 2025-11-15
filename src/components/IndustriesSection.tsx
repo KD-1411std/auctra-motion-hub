@@ -53,7 +53,7 @@ const IndustriesSection = () => {
     <section id="industries" className="py-20 bg-surface-elevated">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Industries We Serve</h2>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">Industries We Serve</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Powering automation across diverse industries with specialized motion control solutions
           </p>
@@ -70,7 +70,7 @@ const IndustriesSection = () => {
                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {industry.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
+                <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
                   {industry.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -83,7 +83,7 @@ const IndustriesSection = () => {
         
         <div className="mt-16 text-center">
           <Card className="p-8 bg-gradient-card shadow-elevated max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 text-primary">Custom Industry Solutions</h3>
+            <h3 className="text-3xl font-bold mb-4 text-primary">Custom Industry Solutions</h3>
             <p className="text-lg text-muted-foreground mb-6">
               Don't see your industry listed? We work across many specialized sectors and can develop 
               custom automation solutions tailored to your specific industry requirements and regulations.

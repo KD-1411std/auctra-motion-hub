@@ -9,7 +9,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-card">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-industrial-gray backdrop-blur-sm border-b border-border shadow-card">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
@@ -19,31 +19,31 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-6">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-200 hover:text-primary transition-colors"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-200 hover:text-primary transition-colors"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('products')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-200 hover:text-primary transition-colors"
             >
               Products
             </button>
             <button 
               onClick={() => scrollToSection('industries')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-200 hover:text-primary transition-colors"
             >
               Industries
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-200 hover:text-primary transition-colors"
             >
               Contact
             </button>

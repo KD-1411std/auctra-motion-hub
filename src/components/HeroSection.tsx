@@ -23,7 +23,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground">
             Powering Automation with 
             <span className="block text-primary">Reliable Motion Control Solutions</span>
           </h1>
@@ -58,7 +58,7 @@ const HeroSection = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary-foreground">Q</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Quality Products</h3>
+              <h3 className="text-xl font-semibold mb-2">Quality Products</h3>
               <p className="text-muted-foreground">Premium automation components built to last</p>
             </div>
             
@@ -66,7 +66,7 @@ const HeroSection = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary-foreground">R</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Reliable Support</h3>
+              <h3 className="text-xl font-semibold mb-2">Reliable Support</h3>
               <p className="text-muted-foreground">Expert technical assistance and after-sales service</p>
             </div>
             
@@ -74,7 +74,7 @@ const HeroSection = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary-foreground">C</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Competitive Pricing</h3>
+              <h3 className="text-xl font-semibold mb-2">Competitive Pricing</h3>
               <p className="text-muted-foreground">Cost-effective solutions without compromising quality</p>
             </div>
           </div>

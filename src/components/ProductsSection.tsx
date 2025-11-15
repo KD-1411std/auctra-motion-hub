@@ -8,7 +8,7 @@ const ProductsSection = () => {
     <section id="products" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Products & Solutions</h2>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">Products & Solutions</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Comprehensive range of automation components designed for reliability, performance, and precision
           </p>
@@ -26,7 +26,7 @@ const ProductsSection = () => {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-foreground">Servo Motors</h3>
+              <h3 className="text-2xl font-bold mb-3 text-foreground">Servo Motors</h3>
               <p className="text-muted-foreground mb-4">
                 High-precision servo motors for accurate motion control in demanding industrial applications. 
                 Available in various torque and speed configurations.

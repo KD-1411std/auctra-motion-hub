@@ -31,7 +31,7 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Contact Us</h2>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">Contact Us</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to discuss your automation needs? Get in touch with our expert team
           </p>
@@ -42,7 +42,7 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <Card className="p-6 shadow-card">
-              <h3 className="text-2xl font-bold mb-6 text-primary">Get In Touch</h3>
+              <h3 className="text-3xl font-bold mb-6 text-primary">Get In Touch</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
