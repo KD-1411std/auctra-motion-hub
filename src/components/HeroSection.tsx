@@ -28,7 +28,7 @@ const HeroSection = () => {
             <span className="block text-primary drop-shadow-lg">Reliable Motion Control Solutions</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-foreground/90 max-w-3xl mx-auto drop-shadow-md font-medium">
+          <p className="text-xl md:text-2xl mb-8 text-white max-w-3xl mx-auto drop-shadow-md font-medium">
             Specializing in high-performance industrial connectors, servo motors, and cables. 
             Delivering precision, quality, and innovation for modern automation systems.
           </p>
