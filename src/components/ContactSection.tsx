@@ -1,8 +1,15 @@
+// import { Card } from "@/components/ui/card";
+// import { Button } from "@/components/ui/button";
+// import { Input } from "@/components/ui/input";
+// import { Textarea } from "@/components/ui/textarea";
+// import { Label } from "@/components/ui/label";
+// import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import emailjs from "emailjs-com";
 import { useState } from "react";
 
 const ContactSection = () => {
@@ -13,17 +20,55 @@ const ContactSection = () => {
     requirement: ''
   });
 
+  const [status, setStatus] = useState({
+    loading: false,
+    success: false,
+    error: "",
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // You can integrate with your backend or email service here
+    setStatus({ loading: true, success: false, error: "" });
+
+    emailjs
+      .send(
+        "service_wxepuga", // <-- replace
+        "template_c2glkdp", // <-- replace
+        {
+          from_name: formData.name,
+          company: formData.company,
+          reply_to: formData.email,
+          message: formData.requirement,
+        },
+        "NED9J3uk-t1ekvs3C" // <-- replace
+      )
+      .then(
+        () => {
+          setStatus({ loading: false, success: true, error: "" });
+          setFormData({
+            name: "",
+            company: "",
+            email: "",
+            requirement: "",
+          });
+        },
+        (err) => {
+          setStatus({
+            loading: false,
+            success: false,
+            error: "Failed to send message. Try again!",
+          });
+          console.error("EmailJS Error:", err);
+        }
+      );
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -98,23 +143,30 @@ const ContactSection = () => {
             </Card>
             
             {/* Downloads Section */}
-            <Card className="p-6 shadow-card">
-              <h3 className="text-xl font-bold mb-4 text-primary">Downloads & Resources</h3>
-              <div className="space-y-3">
-                <Button variant="outline-industrial" className="w-full justify-start">
-                  <span className="mr-2">📋</span>
-                  Product Catalog (PDF)
-                </Button>
-                <Button variant="outline-industrial" className="w-full justify-start">
-                  <span className="mr-2">📖</span>
-                  Company Brochure
-                </Button>
-                {/* <Button variant="outline-industrial" className="w-full justify-start">
-                  <span className="mr-2">📊</span>
-                  Technical Datasheets
-                </Button> */}
-              </div>
-            </Card>
+<Card className="p-6 shadow-card">
+  <h3 className="text-xl font-bold mb-4 text-primary">Downloads & Resources</h3>
+  <div className="space-y-3">
+
+    {/* Product Catalog PDF */}
+    <a href="/files/Auctra motion & controls.pdf" download className="block">
+      <Button variant="outline-industrial" className="w-full justify-start">
+        <span className="mr-2">📋</span>
+        Product Catalog (PDF)
+      </Button>
+    </a>
+
+    {/* Company Brochure PDF */}
+    <a href="/files/Auctra motion & controls.pdf" download className="block">
+      <Button variant="outline-industrial" className="w-full justify-start">
+        <span className="mr-2">📖</span>
+        Company Brochure
+      </Button>
+    </a>
+
+  </div>
+</Card>
+
+
           </div>
           
           {/* Contact Form */}
@@ -171,9 +223,22 @@ const ContactSection = () => {
                 />
               </div>
               
-              <Button type="submit" variant="industrial" size="lg" className="w-full">
-                Send Message
+              <Button type="submit" variant="industrial" size="lg" className="w-full" disabled={status.loading}>
+                {status.loading ? "Sending..." : "Send Message"}
               </Button>
+
+                            {/* STATUS MESSAGES */}
+              {status.success && (
+                <p className="text-green-600 text-center font-semibold">
+                  ✔ Message sent successfully!
+                </p>
+              )}
+
+              {status.error && (
+                <p className="text-red-600 text-center font-semibold">
+                  ❌ {status.error}
+                </p>
+              )}
               
               <p className="text-sm text-muted-foreground text-center">
                 We'll get back to you within 24 hours with a detailed response.

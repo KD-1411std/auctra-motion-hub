@@ -44,9 +44,9 @@ const ProductsSection = () => {
                 <li>• Low maintenance design</li>
                 <li>• Wide speed range</li>
               </ul>
-              <Button variant="outline-industrial" size="sm" className="w-full">
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Specifications
-              </Button>
+              </Button> */}
             </div>
           </Card>
           
@@ -71,9 +71,9 @@ const ProductsSection = () => {
                 <li>• Quick disconnect design</li>
                 <li>• Multiple pin configurations</li>
               </ul>
-              <Button variant="outline-industrial" size="sm" className="w-full">
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Catalog
-              </Button>
+              </Button> */}
             </div>
           </Card>
 
@@ -91,9 +91,9 @@ const ProductsSection = () => {
               <p className="text-muted-foreground mb-4">
                 Standard D-Sub Connectors feature machined pin and socket contacts available in circuit sizes of 9, 15, 25, 37 and 50. These contacts can be configured for solder pot, crimp, straight or right-angled PCB termination, offering versatile solutions for various applications.
               </p>
-              <Button variant="outline-industrial" size="sm" className="w-full">
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Catalog
-              </Button>
+              </Button> */}
             </div>
           </Card>
           
@@ -111,9 +111,9 @@ const ProductsSection = () => {
               <p className="text-muted-foreground mb-4">
                 Flat Ribbon Cable (FRC) and its corresponding connectors are essential components used in a variety of electronic and electrical systems. 
               </p>
-              <Button variant="outline-industrial" size="sm" className="w-full">
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Catalog
-              </Button>
+              </Button> */}
             </div>
           </Card>
 
@@ -130,9 +130,9 @@ const ProductsSection = () => {
               <h3 className="text-xl font-bold mb-3 text-foreground">Heavy Duty Connector</h3>
               <p className="text-muted-foreground mb-4">
                   Heavy Duty Connectors (HDC) are industrial connectors designed to transmit power, data and signal in the toughest of conditions. In environments with vibrations, risk of dust, temperature challenges and mechanical impact, our HDC connectors provide a reliable solution with solid aluminum or thermoplastic hoods and housings with protection degree from IP65 up to IP69k.               </p>
-              <Button variant="outline-industrial" size="sm" className="w-full">
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Catalog
-              </Button>
+              </Button> */}
             </div>
           </Card>
 
@@ -150,9 +150,9 @@ const ProductsSection = () => {
               <p className="text-muted-foreground mb-4">
                 I/O connectors play a crucial role in modern electronics, enabling seamless communication and data transfer between devices. Understanding the different types and their applications can help in selecting the right connector for specific needs.
               </p>
-              <Button variant="outline-industrial" size="sm" className="w-full">
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Catalog
-              </Button>
+              </Button> */}
             </div>
           </Card>
 
@@ -170,9 +170,9 @@ const ProductsSection = () => {
               <p className="text-muted-foreground mb-4">
                 MIL-SPEC connectors, are ruggedized electrical interconnects designed to meet stringent military specifications for durability and performance. They are used in critical applications across various sectors, including military, aerospace, and defense.
               </p>
-              <Button variant="outline-industrial" size="sm" className="w-full">
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Catalog
-              </Button>
+              </Button> */}
             </div>
           </Card>
 
@@ -190,9 +190,9 @@ const ProductsSection = () => {
               <p className="text-muted-foreground mb-4">
                 The M series connectors are available in various sizes, including M8, M5, M23, M16, and M12, and come in A, B, D, and X codes. Additionally, all M series connectors hold an IP67 rating, making them suitable for use under severe and challenging conditions.
               </p>
-              <Button variant="outline-industrial" size="sm" className="w-full">
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Catalog
-              </Button>
+              </Button> */}
             </div>
           </Card>
 
@@ -211,9 +211,9 @@ const ProductsSection = () => {
                  They are crucial in various applications, from consumer electronics to industrial machinery. Power connectors can carry either Alternating Current (AC) or Direct Current (DC) and are designed to ensure reliable and safe connections. 
 
               </p>
-              <Button variant="outline-industrial" size="sm" className="w-full">
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Catalog
-              </Button>
+              </Button> */}
             </div>
           </Card>
           
@@ -221,9 +221,12 @@ const ProductsSection = () => {
         </div>
         
         <div className="text-center">
-          <Button variant="industrial" size="lg">
-            Download Complete Catalog
-          </Button>
+          <a href="/files/Auctra motion & controls.pdf" download>
+            <Button variant="industrial" size="lg">
+              Download Complete Catalog
+            </Button>
+          </a>
+          
         </div>
       </div>
     </section>
