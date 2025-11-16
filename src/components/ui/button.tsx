@@ -17,7 +17,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-gradient-hero text-primary-foreground hover:shadow-hero transition-all duration-300 border-0 shadow-elevated",
         industrial: "bg-primary text-primary-foreground hover:bg-primary-dark transition-all duration-300 shadow-card",
-        "outline-industrial": "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300",
+        "outline-industrial": "border-2 border-primary bg-primary/10 text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-card font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
