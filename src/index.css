@@ -42,8 +42,8 @@ All colors MUST be HSL.
     --industrial-blue: 45 95% 55%;
     --industrial-blue-light: 45 95% 75%;
     --industrial-blue-dark: 40 90% 45%;
-    --industrial-gray: 0 0% 20%;
-    --industrial-gray-light: 0 0% 75%;
+    --industrial-gray: 0 0% 25%;
+    --industrial-gray-light: 0 0% 65%;
     --surface-elevated: 0 0% 98%;
     
     /* Gradients */
@@ -110,8 +110,8 @@ All colors MUST be HSL.
     --industrial-blue: 45 95% 60%;
     --industrial-blue-light: 45 95% 80%;
     --industrial-blue-dark: 40 90% 50%;
-    --industrial-gray: 0 0% 12%;
-    --industrial-gray-light: 0 0% 80%;
+    --industrial-gray: 0 0% 18%;
+    --industrial-gray-light: 0 0% 75%;
     --surface-elevated: 0 0% 12%;
     
     /* Gradients - dark mode */
