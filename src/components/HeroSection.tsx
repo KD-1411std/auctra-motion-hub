@@ -18,7 +18,7 @@ const HeroSection = () => {
       />
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/45 to-background/30" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
