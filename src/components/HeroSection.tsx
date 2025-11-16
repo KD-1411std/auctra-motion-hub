@@ -23,12 +23,12 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground drop-shadow-lg">
             Powering Automation with 
-            <span className="block text-primary">Reliable Motion Control Solutions</span>
+            <span className="block text-primary drop-shadow-lg">Reliable Motion Control Solutions</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-foreground/90 max-w-3xl mx-auto drop-shadow-md font-medium">
             Specializing in high-performance industrial connectors, servo motors, and cables. 
             Delivering precision, quality, and innovation for modern automation systems.
           </p>
@@ -58,24 +58,24 @@ const HeroSection = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary-foreground">Q</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Quality Products</h3>
-              <p className="text-muted-foreground">Premium automation components built to last</p>
+              <h3 className="text-xl font-semibold mb-2 text-foreground drop-shadow-md">Quality Products</h3>
+              <p className="text-foreground/80 drop-shadow-sm">Premium automation components built to last</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary-foreground">R</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Reliable Support</h3>
-              <p className="text-muted-foreground">Expert technical assistance and after-sales service</p>
+              <h3 className="text-xl font-semibold mb-2 text-foreground drop-shadow-md">Reliable Support</h3>
+              <p className="text-foreground/80 drop-shadow-sm">Expert technical assistance and after-sales service</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary-foreground">C</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Competitive Pricing</h3>
-              <p className="text-muted-foreground">Cost-effective solutions without compromising quality</p>
+              <h3 className="text-xl font-semibold mb-2 text-foreground drop-shadow-md">Competitive Pricing</h3>
+              <p className="text-foreground/80 drop-shadow-sm">Cost-effective solutions without compromising quality</p>
             </div>
           </div>
         </div>
