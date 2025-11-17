@@ -89,42 +89,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             <Card className="p-6 shadow-card">
               <h3 className="text-2xl font-bold mb-6 text-primary">Get In Touch</h3>
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary">📞</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Phone</h4>
-                    <p className="text-muted-foreground">
-                     +91-9330470033, +91-9244324468 <br />
-                      <span className="text-sm">Monday - Saturday: 9:00 AM - 8:00 PM</span>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary">✉️</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Email</h4>
-                    <p className="text-muted-foreground">
-                      info@auctramotioncontrols.com<br />
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary">💬</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">WhatsApp</h4>
-                    <p className="text-muted-foreground">
-                      +91-9244324468<br />
-                      <span className="text-sm">Quick support and quotes</span>
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-4">
                         <div className="flex items-start space-x-4">
                           <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -159,7 +124,7 @@ const ContactSection = () => {
                           <div>
                             <h4 className="font-semibold text-foreground">Email</h4>
                             <p className="text-muted-foreground">
-                              info@auctramotioncontrols.in
+                              info@auctramotioncontrols.com
                             </p>
                           </div>
                         </div>
@@ -190,8 +155,6 @@ const ContactSection = () => {
                           <p className="text-sm text-muted-foreground">Scan to WhatsApp</p>
                         </div>
                       </div>
-                    </div>
-                   </div> 
                 </div>
             </Card>
             
