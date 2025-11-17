@@ -1,3 +1,4 @@
+import { Instagram, MessageCircle, Linkedin } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -13,21 +14,40 @@ const Footer = () => {
               servo motors, and cables for modern automation systems.
             </p>
             <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors cursor-pointer">
-                <span className="text-sm">📧</span>
-              </div>
-              <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors cursor-pointer">
-                <span className="text-sm">📱</span>
-              </div>
-              <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors cursor-pointer">
-                <span className="text-sm">🔗</span>
-              </div>
+              <a 
+                href="https://www.instagram.com/auctramotioncontrols/#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 text-primary-foreground" />
+              </a>
+              <a 
+                href="https://wa.me/your-number" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle className="w-5 h-5 text-primary-foreground" />
+              </a>
+              {/* <a 
+                href="https://www.linkedin.com/company/your-company" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5 text-primary-foreground" />
+              </a> */}
+
             </div>
           </div>
           
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-xl font-semibold mb-4 text-primary">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="#home" className="text-gray-300 hover:text-primary transition-colors">Home</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
@@ -39,7 +59,7 @@ const Footer = () => {
           
           {/* Products */}
           <div>
-            <h4 className="text-xl font-semibold mb-4">Our Products</h4>
+            <h4 className="text-xl font-semibold mb-4 text-primary">Our Products</h4>
             <ul className="space-y-2 text-gray-300">
               <li>Servo Motors</li>
               <li>Industrial Connectors</li>

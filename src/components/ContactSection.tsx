@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import emailjs from "emailjs-com";
 import { useState } from "react";
+import scanner from "@/assets/WhatsappSCanner.png";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -88,7 +89,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             <Card className="p-6 shadow-card">
               <h3 className="text-2xl font-bold mb-6 text-primary">Get In Touch</h3>
-              <div className="space-y-4">
+              {/* <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-primary">📍</span>
@@ -136,35 +137,99 @@ const ContactSection = () => {
                     <p className="text-muted-foreground">
                       +91-9244324468<br />
                       <span className="text-sm">Quick support and quotes</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
+                    </p> */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-4">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span className="text-primary">📍</span>
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-foreground">Address</h4>
+                            <p className="text-muted-foreground">
+                              Bhopal, MP, 462001<br />
+                              India
+                            </p>
+                          </div>
+                        </div>
+                      
+                        <div className="flex items-start space-x-4">
+                          <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span className="text-primary">📞</span>
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-foreground">Phone</h4>
+                            <p className="text-muted-foreground">
+                              +91 90397 90111<br />
+                              +91 90397 90222
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-start space-x-4">
+                          <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span className="text-primary">✉️</span>
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-foreground">Email</h4>
+                            <p className="text-muted-foreground">
+                              info@auctramotioncontrols.in
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-start space-x-4">
+                          <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span className="text-primary">💬</span>
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-foreground">WhatsApp</h4>
+                            <p className="text-muted-foreground">
+                              +91 90397 90111
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                
+                      {/* WhatsApp QR Code */}
+                      <div className="flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-48 h-48 bg-white rounded-lg p-4 shadow-card mb-3">
+                            <img 
+                              src={scanner} 
+                              alt="WhatsApp QR Code" 
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <p className="text-sm text-muted-foreground">Scan to WhatsApp</p>
+                        </div>
+                      </div>
+                    </div>
             </Card>
             
             {/* Downloads Section */}
-<Card className="p-6 shadow-card">
-  <h3 className="text-xl font-bold mb-4 text-primary">Downloads & Resources</h3>
-  <div className="space-y-3">
+            <Card className="p-6 shadow-card">
+              <h3 className="text-xl font-bold mb-4 text-primary">Downloads & Resources</h3>
+              <div className="space-y-3">
 
-    {/* Product Catalog PDF */}
-    <a href="/files/Auctra motion & controls.pdf" download className="block">
-      <Button variant="outline-industrial" className="w-full justify-start">
-        <span className="mr-2">📋</span>
-        Product Catalog (PDF)
-      </Button>
-    </a>
+                {/* Product Catalog PDF */}
+                <a href="/files/Auctra motion & controls.pdf" download className="block">
+                  <Button variant="outline-industrial" className="w-full justify-start">
+                    <span className="mr-2">📋</span>
+                    Product Catalog (PDF)
+                  </Button>
+                </a>
 
-    {/* Company Brochure PDF */}
-    <a href="/files/Auctra motion & controls.pdf" download className="block">
-      <Button variant="outline-industrial" className="w-full justify-start">
-        <span className="mr-2">📖</span>
-        Company Brochure
-      </Button>
-    </a>
+                {/* Company Brochure PDF */}
+                {/* <a href="/files/Auctra motion & controls.pdf" download className="block">
+                  <Button variant="outline-industrial" className="w-full justify-start">
+                    <span className="mr-2">📖</span>
+                    Company Brochure
+                  </Button>
+                </a> */}
 
-  </div>
-</Card>
+              </div>
+            </Card>
 
 
           </div>
@@ -229,9 +294,11 @@ const ContactSection = () => {
 
                             {/* STATUS MESSAGES */}
               {status.success && (
-                <p className="text-green-600 text-center font-semibold">
+                <><p className="text-green-600 text-center font-semibold">
                   ✔ Message sent successfully!
-                </p>
+                </p><p className="text-sm text-muted-foreground text-center">
+                We'll get back to you within 2 working days with a detailed response.
+              </p></>
               )}
 
               {status.error && (
@@ -240,9 +307,9 @@ const ContactSection = () => {
                 </p>
               )}
               
-              <p className="text-sm text-muted-foreground text-center">
-                We'll get back to you within 24 hours with a detailed response.
-              </p>
+              {/* <p className="text-sm text-muted-foreground text-center">
+                We'll get back to you within 2 working days with a detailed response.
+              </p> */}
             </form>
           </Card>
         </div>

@@ -7,7 +7,7 @@ import FRCConnector from "@/assets/FRC.jpeg";
 import HeavyDutyConnector from "@/assets/Heavy-duty-connector.jpeg";
 import IOConnector from "@/assets/IO-connector.jpg";
 import militaryGradeConnector from "@/assets/military-grade.jpg";
-import MseriesConnector from "@/assets/M12-connector.jpg";
+import MseriesConnector from "@/assets/M-series connector.jpg";
 import powerConnector from "@/assets/Power-connector.jpg";
 
 const ProductsSection = () => {
@@ -96,45 +96,6 @@ const ProductsSection = () => {
               </Button> */}
             </div>
           </Card>
-          
-          {/* FRC  Connectors */}
-          <Card className="overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300 group">
-            <div className="aspect-video overflow-hidden">
-              <img 
-                src={FRCConnector} 
-                alt="Industrial connectors and cables for automation systems"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-foreground">FRC Connector</h3>
-              <p className="text-muted-foreground mb-4">
-                Flat Ribbon Cable (FRC) and its corresponding connectors are essential components used in a variety of electronic and electrical systems. 
-              </p>
-              {/* <Button variant="outline-industrial" size="sm" className="w-full">
-                View Catalog
-              </Button> */}
-            </div>
-          </Card>
-
-          {/* Heavy duty  Connectors */}
-          <Card className="overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300 group">
-            <div className="aspect-video overflow-hidden">
-              <img 
-                src={HeavyDutyConnector} 
-                alt="Industrial connectors and cables for automation systems"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-foreground">Heavy Duty Connector</h3>
-              <p className="text-muted-foreground mb-4">
-                  Heavy Duty Connectors (HDC) are industrial connectors designed to transmit power, data and signal in the toughest of conditions. In environments with vibrations, risk of dust, temperature challenges and mechanical impact, our HDC connectors provide a reliable solution with solid aluminum or thermoplastic hoods and housings with protection degree from IP65 up to IP69k.               </p>
-              {/* <Button variant="outline-industrial" size="sm" className="w-full">
-                View Catalog
-              </Button> */}
-            </div>
-          </Card>
 
           {/* IO  Connectors */}
           <Card className="overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300 group">
@@ -211,6 +172,44 @@ const ProductsSection = () => {
                  They are crucial in various applications, from consumer electronics to industrial machinery. Power connectors can carry either Alternating Current (AC) or Direct Current (DC) and are designed to ensure reliable and safe connections. 
 
               </p>
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
+                View Catalog
+              </Button> */}
+            </div>
+          </Card>
+          {/* FRC  Connectors */}
+          <Card className="overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300 group">
+            <div className="aspect-video overflow-hidden">
+              <img 
+                src={FRCConnector} 
+                alt="Industrial connectors and cables for automation systems"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-foreground">FRC Connector</h3>
+              <p className="text-muted-foreground mb-4">
+                Flat Ribbon Cable (FRC) and its corresponding connectors are essential components used in a variety of electronic and electrical systems. 
+              </p>
+              {/* <Button variant="outline-industrial" size="sm" className="w-full">
+                View Catalog
+              </Button> */}
+            </div>
+          </Card>
+
+          {/* Heavy duty  Connectors */}
+          <Card className="overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300 group">
+            <div className="aspect-video overflow-hidden">
+              <img 
+                src={HeavyDutyConnector} 
+                alt="Industrial connectors and cables for automation systems"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-foreground">Heavy Duty Connector</h3>
+              <p className="text-muted-foreground mb-4">
+                  Heavy Duty Connectors (HDC) are industrial connectors designed to transmit power, data and signal in the toughest of conditions. In environments with vibrations, risk of dust, temperature challenges and mechanical impact, our HDC connectors provide a reliable solution with solid aluminum or thermoplastic hoods and housings with protection degree from IP65 up to IP69k.               </p>
               {/* <Button variant="outline-industrial" size="sm" className="w-full">
                 View Catalog
               </Button> */}
