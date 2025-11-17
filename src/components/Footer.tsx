@@ -1,3 +1,5 @@
+import { Instagram, MessageCircle, Linkedin } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -13,15 +15,33 @@ const Footer = () => {
               servo motors, and cables for modern automation systems.
             </p>
             <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors cursor-pointer">
-                <span className="text-sm">📧</span>
-              </div>
-              <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors cursor-pointer">
-                <span className="text-sm">📱</span>
-              </div>
-              <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors cursor-pointer">
-                <span className="text-sm">🔗</span>
-              </div>
+              <a 
+                href="https://www.instagram.com/your-profile" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 text-primary-foreground" />
+              </a>
+              <a 
+                href="https://wa.me/your-number" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle className="w-5 h-5 text-primary-foreground" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/your-company" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5 text-primary-foreground" />
+              </a>
             </div>
           </div>
           
