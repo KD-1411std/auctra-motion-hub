@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const AboutSection = () => {
   return (
@@ -10,7 +11,7 @@ const AboutSection = () => {
             <div className="w-24 h-1 bg-gradient-primary mx-auto"></div>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 At <span className="font-semibold text-primary">Auctra Motion Controls</span>, we specialise in providing high-performance automation solutions with a strong focus on industrial connectors, servo motors, and cables. With expertise in motion control technology, we aim to deliver reliable, efficient, and future-ready products that power automation across industries.
@@ -25,17 +26,38 @@ const AboutSection = () => {
               </p>
             </div>
             
-            <Card className="p-8 bg-gradient-card shadow-elevated">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-primary-foreground">👉</span>
-                </div>
-                <h3 className="text-3xl font-bold mb-4 text-primary">Our Mission</h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  To be a trusted partner in automation by delivering top-quality products, technical expertise, and customer-centric solutions.
-                </p>
-              </div>
-            </Card>
+            <Tabs defaultValue="mission" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto">
+                <TabsTrigger value="mission">Our Mission</TabsTrigger>
+                <TabsTrigger value="vision">Our Vision</TabsTrigger>
+              </TabsList>
+              <TabsContent value="mission" className="mt-6">
+                <Card className="p-8 bg-gradient-card shadow-elevated">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                      <span className="text-2xl font-bold text-primary-foreground">🎯</span>
+                    </div>
+                    <h3 className="text-3xl font-bold mb-4 text-primary">Our Mission</h3>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      To be a trusted partner in automation by delivering top-quality products, technical expertise, and customer-centric solutions.
+                    </p>
+                  </div>
+                </Card>
+              </TabsContent>
+              <TabsContent value="vision" className="mt-6">
+                <Card className="p-8 bg-gradient-card shadow-elevated">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                      <span className="text-2xl font-bold text-primary-foreground">🚀</span>
+                    </div>
+                    <h3 className="text-3xl font-bold mb-4 text-primary">Our Vision</h3>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      To lead the automation industry with innovative solutions that drive efficiency, sustainability, and excellence across global markets.
+                    </p>
+                  </div>
+                </Card>
+              </TabsContent>
+            </Tabs>
           </div>
           
           {/* Why Choose Us */}
