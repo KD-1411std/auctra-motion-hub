@@ -11,6 +11,7 @@ const AboutSection = () => {
             <div className="w-24 h-1 bg-gradient-primary mx-auto"></div>
           </div>
           
+
           {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"> */}
               <div className="space-y-8">
                 <div className="space-y-6">
@@ -26,17 +27,6 @@ const AboutSection = () => {
                     Whether it's standard products or customised requirements, we provide end-to-end support, from product selection to after-sales service, helping our customers achieve higher productivity and efficiency.
                   </p>
                 </div>
-                {/* <Card className="p-8 bg-gradient-card shadow-elevated">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                      <span className="text-2xl font-bold text-primary-foreground">👉</span>
-                    </div>
-                    <h3 className="text-3xl font-bold mb-4 text-primary">Our Mission</h3>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      To be a trusted partner in automation by delivering top-quality products, technical expertise, and customer-centric solutions.
-                    </p>
-                  </div>
-                </Card> */}
                 <Tabs defaultValue="mission" className="w-full">
                   <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto">
                     <TabsTrigger value="mission">Our Mission</TabsTrigger>

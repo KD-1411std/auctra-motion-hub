@@ -1,4 +1,5 @@
 import { Instagram, MessageCircle, Linkedin } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -16,6 +17,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a 
                 href="https://www.instagram.com/auctramotioncontrols/#" 
+
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors"
@@ -32,7 +34,10 @@ const Footer = () => {
               >
                 <MessageCircle className="w-5 h-5 text-primary-foreground" />
               </a>
+
               {/* <a 
+              <a 
+>>>>>>> origin/main
                 href="https://www.linkedin.com/company/your-company" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -41,7 +46,6 @@ const Footer = () => {
               >
                 <Linkedin className="w-5 h-5 text-primary-foreground" />
               </a> */}
-
             </div>
           </div>
           

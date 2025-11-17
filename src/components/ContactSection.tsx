@@ -89,20 +89,6 @@ const ContactSection = () => {
           <div className="space-y-8">
             <Card className="p-6 shadow-card">
               <h3 className="text-2xl font-bold mb-6 text-primary">Get In Touch</h3>
-              {/* <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary">📍</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Address</h4>
-                    <p className="text-muted-foreground">
-                      Bhopal, MP, 462001<br />
-                      India
-                    </p>
-                  </div>
-                </div>
-                
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-primary">📞</span>
@@ -137,7 +123,7 @@ const ContactSection = () => {
                     <p className="text-muted-foreground">
                       +91-9244324468<br />
                       <span className="text-sm">Quick support and quotes</span>
-                    </p> */}
+                    </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-4">
                         <div className="flex items-start space-x-4">
@@ -205,6 +191,8 @@ const ContactSection = () => {
                         </div>
                       </div>
                     </div>
+                   </div> 
+                </div>
             </Card>
             
             {/* Downloads Section */}
