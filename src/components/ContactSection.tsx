@@ -164,7 +164,7 @@ const ContactSection = () => {
               <div className="space-y-3">
 
                 {/* Product Catalog PDF */}
-                <a href="/files/Auctra motion & controls.pdf" download className="block">
+                <a href="/files/Auctra-Brochure.pdf" download className="block">
                   <Button variant="outline-industrial" className="w-full justify-start">
                     <span className="mr-2">📋</span>
                     Product Catalog (PDF)

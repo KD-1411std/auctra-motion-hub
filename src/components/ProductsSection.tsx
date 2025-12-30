@@ -220,12 +220,11 @@ const ProductsSection = () => {
         </div>
         
         <div className="text-center">
-          <a href="/files/Auctra motion & controls.pdf" download>
+          <a href="/files/Auctra-Brochure.pdf" download>
             <Button variant="industrial" size="lg">
               Download Complete Catalog
             </Button>
           </a>
-          
         </div>
       </div>
     </section>
